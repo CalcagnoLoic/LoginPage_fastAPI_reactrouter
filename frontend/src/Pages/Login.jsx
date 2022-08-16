@@ -36,7 +36,7 @@ export default function Login() {
             <div>
                 <h1 className="text-center p-5 text-2xl font-semibold mt-15"></h1>
 
-                <div className="border-black border-1 p-5 m-5 rounded-xl w-1/4 block auto bg-gray-100 drop-shadow-lg ml-auto mr-auto shadow-lg sm:w-1/2">
+                <div className="border-black border-1 p-5 m-5 rounded-xl xl:w-1/4 block auto bg-gray-100 drop-shadow-lg ml-auto mr-auto shadow-lg sm:w-1/2">
                     {
                         fetchToken() ? (<p>You are logged in!</p>) : (
                                 <form action="" className="flex content-center gap-5 flex-col p-5 drop-shadow-lg " >
