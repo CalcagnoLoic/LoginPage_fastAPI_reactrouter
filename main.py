@@ -29,7 +29,7 @@ def read_root():
 @app.post("/login")
 async def login_user(login_item: LoginItem):
     data = jsonable_encoder(login_item)
-    if dummy_user["username"] == data["username"] and dummy_user["username"] == data["username"]:
+    if dummy_user["username"] == data["username"] and dummy_user["password"] == data["password"]:
         encoded_jwt = jwt.encode(data, SECRET_KEY, algorithm=ALGORITHM)
         return {'token': encoded_jwt}
     else:

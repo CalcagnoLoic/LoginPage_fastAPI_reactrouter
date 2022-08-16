@@ -43,7 +43,7 @@ export default function Login() {
                                     <h2 className="text-center text-2xl pb-2">Login</h2>
                                     <input type="text" className="rounded p-4" placeholder="Your username..." onChange={(e) => setUsername(e.target.value)}/>
 
-                                    <input type="text" className="rounded p-4" placeholder="Your password..." onChange={(e) => setPassword(e.target.value)}/>
+                                    <input type="password" className="rounded p-4" placeholder="Your password..." onChange={(e) => setPassword(e.target.value)}/>
 
                                     <button type='button' className="rounded-xl bg-red-400 p-5 w-full hover:bg-red-600 transition ml-auto mr-auto hover:text-white" onClick={login}>Login</button>
 
